@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"
+      type="text/javascript">
+    </script>
+
+    <title>Portfolio</title>
+
+    <style>
+      form {
+        rows="4" cols="50"
+        border-style:solid;
+        border-color: white;
+        border-width: 3px;
+        background-color: gray;
+        width: 30%
+        text-align: center;
+    </style>
+
+  </head>
+
+  <body>
+
+
+    <nav>
+      <a href=index.html> Home</a>
+      <a href=portfolio.html> Portfolio</a>
+      <a href=contact.html> Contact</a>
+    </nav>
+
+    <hearder>
+      <h1> Portfolio Page </h1>
+      <h2> My Projects</h2>
+      <table>
+        <tr>
+          <th>Web Development Projects:  </th>
+          <th>Software Implementation Projects:  </th>
+        </tr>
+        <tr>
+          <td>Personal Web Site</td>
+          <td>PRISM, BPCS, RedPrarie, LABC21, eLearning, </td>
+        </tr>
+      </table>
+    </hearder>
+
+    <script>
+      function txtFunction() {
+        var x = document.createElement("TextEntry");
+        x.setAttribute("type", "text");
+        x.setAttribute("value", "");
+      document.body.appendChild(x);
+      }
+</script>
+
+  <p>  Tell me about your projects... </p>
+    <textarea
+      rows="4" cols="50" id= "textarea">
+    </textarea>
+
+    <button
+      onClick="myFunction()">Click to see how much you wrote?
+    </button>
+
+    <p id="row1"> </p>
+    <p id="row2">  </p>
+    <p id="row3">  </p>
+    <p id="row4">  </p>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/lindalmarsh-34/">LinkedIn</a>
+        <a href="https://www.facebook.com/linda.marsh.9822/" >FaceBook</a>
+    </footer>
+
+  </body>
+</html>
